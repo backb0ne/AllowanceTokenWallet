@@ -14,4 +14,6 @@ contract ForkToken1 is ERC20("ForkBaseToken", "FBT"), Ownable {
     function burn(address _to, uint256 _amount) public onlyOwner {
         _burn(_to, _amount);
     }
-}
+    function decimals() public view override returns (uint8) {
+        return 6;
+    }}

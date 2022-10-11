@@ -9,8 +9,8 @@ contract AllowanceTokenWallet is Ownable, Pausable {
 
     IERC20 public immutable allowanceToken;
     constructor () {
-        allowanceToken = IERC20(0x01Dbe473fC7BBACf42a3f2232BFCb12b75FF5D1c); 
-    //IERC20(0xc7198437980c041c805A1EDcbA50c1Ce5db95118); //AvaxC USDT Token Tracker
+        allowanceToken = IERC20(0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7); //AvaxC USDt Token Tracker
+        //allowanceToken = IERC20(0xc7198437980c041c805A1EDcbA50c1Ce5db95118); //AvaxC USDT.e Token Tracker
     }
     struct Allowance {
         uint allowanceAmount;
